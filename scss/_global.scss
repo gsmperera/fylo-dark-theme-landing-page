@@ -1,0 +1,23 @@
+html {
+  font-size: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $main-dark-blue;
+  color: $white;
+  font-size: 0.875rem; //14px
+  font-family: "Open Sans", sans-serif;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}

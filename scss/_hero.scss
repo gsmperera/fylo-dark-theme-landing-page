@@ -1,0 +1,47 @@
+.hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $intro-dark-blue;
+  background-image: url(../images/bg-curvy-desktop.svg);
+  background-size: 100% 15.75rem; // 252px
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 22.5rem; // 360px
+
+    img {
+      width: 100%;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin: 1.5rem 0; // 24px
+    }
+    p {
+      font-size: 0.75rem; //14px
+    }
+    button {
+      width: 8.75rem; // 140px
+      height: 1.75rem; // 28px
+      border-radius: 0.875rem; // 14px
+      margin-top: 1rem;
+      color: $white;
+      background: linear-gradient(to right, $cyan 0%, $light-blue 100%);
+      margin-bottom: 5.5rem; // 88px
+
+      &:hover {
+        background: $cyan;
+      }
+    }
+  }
+
+  .bg-curvy {
+    width: 100%;
+  }
+}
