@@ -1,41 +1,41 @@
 .productive {
-  display: flex;
-  justify-content: center;
-  margin: 4rem; // 16px
+    display: flex;
+    justify-content: center;
+    margin: 4rem; // 16px
 
-  & > img {
-    width: 20rem; // 320px
-    margin-right: 2rem;
-  }
-  .container {
-    width: 20rem; // 320px
-
-    h2 {
-      font-size: 1.2rem;
-      margin: 1.2rem 0;
+    & > img {
+        width: 20rem; // 320px
+        margin-right: 2rem;
     }
-    p {
-      font-size: 0.675rem; // 10px
-      margin-bottom: 1rem; // 10px
-    }
-    a {
-      font-size: 0.5rem; // 8px
-      color: $cyan;
-      display: flex;
-      align-items: center;
+    .container {
+        width: 20rem; // 320px
 
-      img {
-        width: 0.675rem; //10px
-        margin-left: 0.25rem;
-      }
-
-      &:hover {
-        color: $white;
-
-        img {
-          color: $white;
+        h2 {
+            font-size: 1.2rem;
+            margin: 1.2rem 0;
         }
-      }
+        p {
+            font-size: 0.675rem; // 10px
+            margin-bottom: 1rem; // 10px
+        }
+        a {
+            font-size: 0.5rem; // 8px
+            color: $cyan;
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 0.675rem; //10px
+                margin-left: 0.25rem;
+            }
+
+            &:hover {
+                color: $white;
+
+                img {
+                    color: $white;
+                }
+            }
+        }
     }
-  }
 }
