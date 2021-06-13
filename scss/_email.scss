@@ -1,9 +1,11 @@
 .email {
+    width: 100%;
     display: flex;
     justify-content: center;
 
     .container {
-        width: 28rem; // 448px
+        width: 80%;
+        max-width: 28rem; // 448px
         text-align: center;
         background-color: $testimonial-dark-blue;
         padding: 1.5rem; // 24px
@@ -20,6 +22,10 @@
         p {
             font-size: 0.675rem; // 10px
             margin-bottom: 1.2rem;
+
+            @include breakpoint-down(medium) {
+                text-align: left;
+            }
         }
         input {
             width: 15rem; // 240px
@@ -37,6 +43,11 @@
             &::placeholder {
                 font-size: 0.5rem; // 10px
             }
+
+            @include breakpoint-down(medium) {
+                width: 100%;
+                top: 0;
+            }
         }
         button {
             width: 6.125rem; // 98px
@@ -46,6 +57,12 @@
             background: linear-gradient(to right, $cyan 0%, $light-blue 100%);
             font-size: 0.5rem; // 8px
             margin-left: 0.675rem; // 10px
+
+            @include breakpoint-down(medium) {
+                width: 100%;
+                margin-left: 0;
+                margin-top: 0.5rem;
+            }
 
             &:hover {
                 background: $cyan;

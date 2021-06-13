@@ -1,23 +1,37 @@
 html {
     font-size: 100%;
+    box-sizing: border-box;
 }
 
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    box-sizing: inherit;
 }
 
 body {
+    width: 100%;
+    min-width: 18.75rem; // 300px
+    margin: 0;
+    padding: 0;
     background-color: $main-dark-blue;
     color: $white;
     font-size: 0.875rem; //14px
     font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+
+    @include breakpoint-up(large) {
+        width: map-get($map: $breakpoint-up, $key: large);
+    }
 }
 
 button {
     border: none;
     cursor: pointer;
+}
+
+a,
+a:hover,
+a:active {
+    text-decoration: none;
 }

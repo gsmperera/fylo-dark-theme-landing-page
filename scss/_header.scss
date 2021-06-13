@@ -4,6 +4,10 @@
     padding: 2.5rem; // 40px
     background-color: $intro-dark-blue;
 
+    @include breakpoint-down(small) {
+        padding: 1.5rem;
+    }
+
     .logo {
         display: flex;
 
@@ -22,15 +26,25 @@
             color: $white;
             font-size: 0.875rem; // 14px
 
+            @include breakpoint-down(small) {
+                font-size: 0.75rem; // 16px
+            }
+
             &:not(:last-child) {
                 margin-right: 1.875rem; // 30px
+
+                @include breakpoint-down(medium) {
+                    margin-right: 15px;
+                }
+                @include breakpoint-down(small) {
+                    margin-right: 10px;
+                }
             }
 
             &:hover {
-                font-weight: 700;
                 text-decoration: underline;
-                text-decoration-thickness: 1%;
                 cursor: pointer;
+                text-underline-offset: 0.25rem;
             }
         }
     }

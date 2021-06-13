@@ -5,7 +5,7 @@
     align-items: center;
     background-color: $intro-dark-blue;
     background-image: url(../images/bg-curvy-desktop.svg);
-    background-size: 100% 15.75rem; // 252px
+    background-size: 100% 15.75rem; // width and height(252px)
     background-repeat: no-repeat;
     background-position: bottom;
 
@@ -16,8 +16,19 @@
         text-align: center;
         width: 22.5rem; // 360px
 
+        @include breakpoint-down(small) {
+            width: 75%;
+        }
+
         img {
             width: 100%;
+
+            @include breakpoint-down(medium) {
+                width: 75%;
+            }
+            @include breakpoint-down(small) {
+                width: 75%;
+            }
         }
         h2 {
             font-size: 1.2rem;
