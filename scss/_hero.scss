@@ -16,6 +16,9 @@
         text-align: center;
         width: 22.5rem; // 360px
 
+        @include breakpoint-down(medium) {
+            margin-top: 1rem; // 16px
+        }
         @include breakpoint-down(small) {
             width: 75%;
         }

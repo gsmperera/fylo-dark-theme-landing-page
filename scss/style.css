@@ -147,6 +147,12 @@ a:active {
   width: 22.5rem;
 }
 
+@media only screen and (max-width: 43.6875rem) {
+  .hero .container {
+    margin-top: 1rem;
+  }
+}
+
 @media only screen and (max-width: 25rem) {
   .hero .container {
     width: 75%;
